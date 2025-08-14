@@ -3,12 +3,12 @@ const path = require('path');
 
 const app = express();
 
-// Se você tiver arquivos estáticos (HTML, CSS, JS)
+// Servir arquivos estáticos dentro de /src/public
 app.use(express.static(path.join(__dirname, 'public')));
 
-// Rotas básicas (exemplo)
+// Rota principal
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'index.html'));
+  res.sendFile(path.join(__dirname, 'public', 'index.html'));
 });
 
 // Porta dinâmica para Render ou 3000 localmente
