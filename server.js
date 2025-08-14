@@ -8,7 +8,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Rotas básicas (exemplo)
 app.get('/', (req, res) => {
-  res.sendFile(path.join(__dirname, 'public', 'index.html'));
+  res.sendFile(path.join(__dirname, 'index.html'));
 });
 
 // Porta dinâmica para Render ou 3000 localmente
